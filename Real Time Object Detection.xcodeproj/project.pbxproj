@@ -15,6 +15,8 @@
 		101B6D6226EA5838000332A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101B6D6026EA5838000332A5 /* LaunchScreen.storyboard */; };
 		101B6D6D26EA5838000332A5 /* Real_Time_Object_DetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B6D6C26EA5838000332A5 /* Real_Time_Object_DetectionTests.swift */; };
 		101B6D7826EA5838000332A5 /* Real_Time_Object_DetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B6D7726EA5838000332A5 /* Real_Time_Object_DetectionUITests.swift */; };
+		101B6D8626EA5ECC000332A5 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 101B6D8526EA5ECC000332A5 /* SqueezeNet.mlmodel */; };
+		101B6D8826EA606E000332A5 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 101B6D8726EA606E000332A5 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		101B6D7326EA5838000332A5 /* Real Time Object DetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Real Time Object DetectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101B6D7726EA5838000332A5 /* Real_Time_Object_DetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Real_Time_Object_DetectionUITests.swift; sourceTree = "<group>"; };
 		101B6D7926EA5838000332A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101B6D8526EA5ECC000332A5 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		101B6D8726EA606E000332A5 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				101B6D5526EA5836000332A5 /* AppDelegate.swift */,
 				101B6D5726EA5836000332A5 /* SceneDelegate.swift */,
 				101B6D5926EA5836000332A5 /* ViewController.swift */,
+				101B6D8726EA606E000332A5 /* Resnet50.mlmodel */,
+				101B6D8526EA5ECC000332A5 /* SqueezeNet.mlmodel */,
 				101B6D5B26EA5836000332A5 /* Main.storyboard */,
 				101B6D5E26EA5838000332A5 /* Assets.xcassets */,
 				101B6D6026EA5838000332A5 /* LaunchScreen.storyboard */,
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101B6D8826EA606E000332A5 /* Resnet50.mlmodel in Sources */,
 				101B6D5A26EA5836000332A5 /* ViewController.swift in Sources */,
 				101B6D5626EA5836000332A5 /* AppDelegate.swift in Sources */,
 				101B6D5826EA5836000332A5 /* SceneDelegate.swift in Sources */,
+				101B6D8626EA5ECC000332A5 /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = K9T9S7CL7K;
 				INFOPLIST_FILE = "Real Time Object Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Swift;
 				DEVELOPMENT_TEAM = K9T9S7CL7K;
 				INFOPLIST_FILE = "Real Time Object Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
