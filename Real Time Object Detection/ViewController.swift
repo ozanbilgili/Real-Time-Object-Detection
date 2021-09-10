@@ -9,7 +9,6 @@ import AVKit
 import UIKit
 import Vision
 
-
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     override func viewDidLoad() {
@@ -22,7 +21,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         captureSession.sessionPreset = .photo
         
        guard let captureDevice =
-                AVCaptureDevice.default(for: .video) else { return}
+                AVCaptureDevice.default(for: .video) else { return }
         
         guard let input = try?
             AVCaptureDeviceInput(device: captureDevice) else { return }
@@ -40,10 +39,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         captureSession.addOutput(dataOutput)
         
-        
-        
-       
-        
+
     //    VNImageRequestHandler(cgImage: <#T##CGImage#>, options: [:]).perform(<#T##requests: [VNRequest]##[VNRequest]#>)
     }
     
